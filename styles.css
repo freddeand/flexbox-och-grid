@@ -23,24 +23,6 @@ body{
     width: 90px;
     border: 5px solid blue;
     padding: 10px;
-   
+   flex: 1 1 100px;
 }
 
-/* Responsive design using media queries */
-@media (max-width: 768px) {
-    .Flex-item {
-      flex: 5 5; /* On smaller screens, items take up full width */
-    }
-  }
-  
-  @media (min-width: 769px) and (max-width: 1200px) {
-    .Flex-item {
-      flex: 1 1 48%; /* On medium screens, two items per row */
-    }
-  }
-  
-  @media (min-width: 1201px) {
-    .Flex-item {
-      flex: 1 1 23%; /* On larger screens, four items per row */
-    }
-  }
