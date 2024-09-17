@@ -1,0 +1,92 @@
+body{
+    background-color: #333;
+    padding: 0%;
+    margin: 1px;
+
+}
+header{
+    background-color: burlywood;
+    color: #333;
+    margin: 1px;  
+}
+nav{
+    width: auto;
+    height: 3rem;
+    display: flex;
+   
+}
+nav a{
+    text-decoration: none; /* tar bort det blåa*/
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* fixar det i mitten av boxen */
+    align-items: center; /*mitten av box*/
+    color: #333;
+   
+}
+nav a:hover{
+    background-color: #333;
+    color: burlywood;
+}
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 40px;
+    margin: 10px;
+    padding: 10px;
+    color: #333;
+
+}
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    line-height: 40px;
+
+}
+article{
+    padding: 1px;
+    margin: 1px;
+    background: burlywood;
+    flex: 200px;
+    flex: 1 200px;
+}
+/* article:nth-of-type(3) {
+    flex: 2 200px;
+  }
+  article:nth-of-type(2) {
+    flex: 2;
+  } */
+
+section{
+    display: inline-flex;
+    flex-flow: row wrap;
+}
+footer{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+    margin-top: auto;
+    bottom: -50%;
+
+   
+    
+}
+footer h2{
+    position: bottom;
+    width: 100%;
+    background-color: burlywood;
+    color: #333;
+    justify-content: left;
+    
+}
+footer p{
+    background-color: burlywood;
+    color: #333;
+    
+}
+
