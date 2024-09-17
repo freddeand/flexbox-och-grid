@@ -1,0 +1,56 @@
+:root{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+header{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(139, 121, 121);
+    border: 1px solid black;
+    
+}
+
+
+header h1{
+    display: flex;
+    color: blanchedalmond;
+    justify-content: center;
+    align-items: center;
+    
+}
+nav {
+    width: auto;
+    height: 3rem;
+    display: flex;
+    background: rgb(139, 121, 121);
+    border: 1px solid black;
+}
+nav a {
+    text-decoration: none; /* tar bort det blåa*/
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* fixar det i mitten av boxen */
+    align-items: center; /*mitten av box*/
+    color: blanchedalmond;
+
+
+}
+nav a:hover{
+    background-color: burlywood;
+    color: cadetblue;
+}
+main{
+    display: flex;
+    justify-content: space-around;
+
+}
+.box{
+    background-color: burlywood;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+}
+.box p{
+    padding: 10px;
+    margin: 10px;
+}
