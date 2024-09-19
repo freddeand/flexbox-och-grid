@@ -1,16 +1,35 @@
-:root {
+/* :root {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
     margin: 10px;
 
+} */
+header{
+    /* color: aliceblue;
+   text-align: center;
+   background: #333;
+   padding: 20px;
+   margin: 0;
+   max-width: 1000%;
+   display: flex;
+   justify-content: center; */
+   max-width: 1000%;
+   /* height: 3rem; */
+   background: rgb(141, 134, 122);
+   display: flex;
+   border: 1px solid black;
+   justify-content: center;
+   border-radius: 10px;
+   margin: 10px;
 }
-
 nav{
     max-width: 1000%;
     height: 3rem;
     background: rgb(141, 134, 122);
     display: flex;
     border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
   
 }
 nav a{
@@ -20,9 +39,50 @@ nav a{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
 
 }
 nav a:hover {
     background: #333;
     color: aliceblue;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
+
+}
+main section article img{
+    width: 100%; /* Makes the image fill the grid item's width */
+    height: 100%; /* Optional: ensures image fills the grid item's height */
+    object-fit: cover; /* Scales the image to cover the entire area */
+}
+
+main section{
+    /* display: grid;
+    grid-template-columns: 3;
+    grid-template-rows: 1; */
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 5px;
+}
+footer{
+    max-width: 1000%;
+    height: 3rem;
+    background: rgb(141, 134, 122);
+    display: flex;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 10px;
+    justify-content: center;
+    
+}
+footer h3{
+   
+}
+
+@media (max-width: 400px) {
+    main{
+        grid-template-columns: 1fr;
+    }
 }

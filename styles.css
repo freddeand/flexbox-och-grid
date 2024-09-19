@@ -5,11 +5,14 @@ body{
 
 
 }
+header{
+    text-align: center;
+}
 .flexbox-container{
-    background-color: coral;
+    background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-around;
-    height: 10rem;
+    height: 100px;
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
@@ -24,5 +27,6 @@ body{
     border: 5px solid blue;
     padding: 10px;
    flex: 1 1 100px;
+  
 }
 
