@@ -15,17 +15,20 @@ header{
    justify-content: center; */
    max-width: 1000%;
    /* height: 3rem; */
-   background: rgb(141, 134, 122);
+   background: rgba(141, 134, 122, 0.521);
    display: flex;
    border: 1px solid black;
    justify-content: center;
    border-radius: 10px;
    margin: 10px;
 }
+header h1{
+    color: white;
+}
 nav{
     max-width: 1000%;
     height: 3rem;
-    background: rgb(141, 134, 122);
+    background: rgba(141, 134, 122, 0.521);
     display: flex;
     border: 1px solid black;
     border-radius: 10px;
@@ -34,7 +37,7 @@ nav{
 }
 nav a{
     text-decoration: none;
-    color: #333;
+    color: #fffefe;
     flex: 1;
     display: flex;
     justify-content: center;
@@ -43,19 +46,24 @@ nav a{
 
 }
 nav a:hover {
-    background: #333;
+    background-color: #333;
     color: aliceblue;
+    transition: background-color 0.3s ease;
+    
 }
 main{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 1fr;
+    padding: 5px;
 
 }
+  
 main section article img{
     width: 100%; /* Makes the image fill the grid item's width */
     height: 100%; /* Optional: ensures image fills the grid item's height */
     object-fit: cover; /* Scales the image to cover the entire area */
+    border-radius: 10px;
 }
 
 main section{
@@ -65,16 +73,30 @@ main section{
     border: 1px solid black;
     border-radius: 10px;
     margin: 5px;
+   
+}
+main :hover{
+    background-color: #333;
+    color: aliceblue;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: background-color 0.3s ease;
+}
+main section article{
+    padding: 10px;
+    
+    
 }
 footer{
     max-width: 1000%;
     height: 3rem;
-    background: rgb(141, 134, 122);
+    background: rgba(141, 134, 122, 0.521);
     display: flex;
     border: 1px solid black;
     border-radius: 10px;
     margin: 10px;
     justify-content: center;
+    align-items: center;
     
 }
 footer h3{
@@ -84,5 +106,16 @@ footer h3{
 @media (max-width: 400px) {
     main{
         grid-template-columns: 1fr;
+    }
+}
+@media (min-width: 400px) {
+    main{
+        grid-template-columns: 2fr;
+    }
+}
+@media (min-width: 768px) {
+    main{
+        grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr;
     }
 }
