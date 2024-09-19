@@ -1,7 +1,4 @@
-:root{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 25px;
-}
+
 header{
     font-family: 'Times New Roman', Times, serif;
     background-color: rgb(139, 121, 121);
@@ -39,16 +36,21 @@ nav a:hover{
     background-color: burlywood;
     color: cadetblue;
 }
-main{
-    display: flex;
-    justify-content: space-around;
+main section{
+    display: grid;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    gap: 5px; /* Adds space between the columns */
+    width: 100%;
+    
 
 }
 .box{
     background-color: burlywood;
     margin: 10px;
     padding: 10px;
-    display: flex;
+    /* width: 100%; */
+    
 }
 .box p{
     padding: 10px;
